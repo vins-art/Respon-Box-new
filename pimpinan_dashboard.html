@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Pimpinan</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="navbar">Dashboard Pimpinan</div>
+
+<div class="container">
+    <h3>Status Laporan</h3>
+    <div id="statusPimp"></div>
+</div>
+
+<div class="container">
+    <h3>Tren Laporan 30 Hari</h3>
+    <canvas id="chartTrend"></canvas>
+</div>
+
+<div class="container">
+    <h3>Rekap Kategori Terbanyak</h3>
+    <table id="tableRekap"></table>
+</div>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+<script src="app.js"></script>
+</body>
+</html>
