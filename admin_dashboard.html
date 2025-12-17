@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Admin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">Dashboard Admin</div>
+
+<div class="container">
+    <h3>Filter Laporan</h3>
+
+    <label>Kategori</label>
+    <select id="filterKategori" onchange="loadAdmin()">
+        <option value="">Semua</option>
+        <option>Kerusakan Ruangan</option>
+        <option>Kerusakan Peralatan</option>
+        <option>Kebersihan</option>
+    </select>
+
+    <label>Status</label>
+    <select id="filterStatus" onchange="loadAdmin()">
+        <option value="">Semua</option>
+        <option>Baru</option>
+        <option>Diproses</option>
+        <option>Selesai</option>
+    </select>
+</div>
+
+<div class="container">
+    <h3>Status Laporan</h3>
+    <div id="statusAdmin"></div>
+
+    <table id="tableAdmin"></table>
+</div>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+<script src="app.js"></script>
+</body>
+</html>
