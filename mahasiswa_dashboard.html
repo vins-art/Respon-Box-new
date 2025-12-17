@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="navbar">Dashboard Mahasiswa</div>
+
+<div class="container">
+    <h3>Buat Laporan Baru</h3>
+
+    <label>Kategori</label>
+    <select id="kat">
+        <option>Kerusakan Ruangan</option>
+        <option>Kerusakan Peralatan</option>
+        <option>Kebersihan</option>
+    </select>
+
+    <label>Lokasi</label>
+    <input type="text" id="lok">
+
+    <label>Deskripsi</label>
+    <textarea id="desk"></textarea>
+
+    <button onclick="buatLaporan()">Kirim Laporan</button>
+</div>
+
+<div class="container">
+    <h3>Riwayat Laporan</h3>
+    <table id="tableMhs"></table>
+</div>
+
+<button class="logout-btn" onclick="logout()">Logout</button>
+
+<script src="app.js"></script>
+</body>
+</html>
